@@ -1,0 +1,11 @@
+[answer12]
+
+df.columns.tolist()
+
+
+[Tips]
+・列名を一覧表示するにはcolumnsを使用
+・.tolist()を付けることでlist形式に変換
+・ndarray形式で表示する場合は.valuesを使用
+
+df.columns.values

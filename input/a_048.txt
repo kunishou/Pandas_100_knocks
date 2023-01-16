@@ -1,0 +1,8 @@
+[answer48]
+
+df = df.dropna()
+df.isnull().sum()
+
+
+[Tips]
+欠損値を含む行の削除には dropna を使用

@@ -1,0 +1,13 @@
+[answer10]
+
+df.info()
+
+
+[Tips]
+・レコード数(行数)、各列のデータ型、欠損値の有無の
+　確認にはinfo()を使用
+・RangeIndexがレコード数
+・Data columnsがカラム数
+・Non-Null Countがレコードが入ってる数
+・今回、1309レコードだがcabinのNon-Null Countは
+　295なので1309-295のレコードについては欠損している

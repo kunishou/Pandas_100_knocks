@@ -1,0 +1,7 @@
+[answer51]
+
+df.sample(frac=1).reset_index()
+
+
+[Tips]
+インデックスを振り直すときはreset_indexを使用

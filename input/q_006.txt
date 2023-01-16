@@ -1,0 +1,3 @@
+[question6]
+
+# df_copyにdfをコピーして、最初の5行を表示

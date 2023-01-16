@@ -1,0 +1,8 @@
+[answer47]
+
+df['age'] = df['age'].fillna(30)
+df['age'].isnull().sum()
+
+
+[Tips]
+欠損値の補完にはfillnaを使用

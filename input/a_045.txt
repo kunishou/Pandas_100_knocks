@@ -1,0 +1,9 @@
+[answer45]
+
+df2 = df2.rename(index={1 : 10})
+df2.head()
+
+
+[Tips]
+rename(index={1 : 10})で
+一部の行名を変更可能

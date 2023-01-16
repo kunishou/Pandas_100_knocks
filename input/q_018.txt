@@ -1,0 +1,3 @@
+[question18]
+
+# locを使ってdf全体を表示

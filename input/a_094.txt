@@ -1,0 +1,11 @@
+[answer94]
+
+features = df_copy[['pclass','age','sex','fare','embarked']].values
+target = df_copy['survived'].values
+
+
+[Tips]
+・pandas.DataFrameやpandas.Seriesをndarray形式(配列)に
+　変換するにはvaluesを使用
+・機械学習ライブラリのscikit-learnではndarray形式で入力する
+　必要があるため、そのような際にDataFrameをndarray形式に変換する

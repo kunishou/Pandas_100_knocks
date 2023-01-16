@@ -1,0 +1,3 @@
+[question70]
+
+# df2のEnglishで得点の最小値

@@ -1,0 +1,10 @@
+[answer84]
+
+df2['sum'] = df2.iloc[:,2:5].sum(axis=1) #3科目合計の列を作成
+df2[['name','sum']].plot(kind='bar',x=df2.columns[0])
+
+
+[Tips]
+・棒グラフを描画する場合は plot(kind='bar')を使用
+・df2.columns[0]はname列のこと。x=df2.columns[0]を指定し
+　x軸をname列にする(指定しないとどうなるかは試してみて下さい)

@@ -1,0 +1,4 @@
+[answer35]
+
+df['fare'] = df['fare'] + 100
+df.head()

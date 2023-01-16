@@ -1,0 +1,5 @@
+[question24]
+
+# dfのname,age,sexの列のみ抽出しdf_copyに格納
+# その後outputフォルダにcsvファイルで出力
+# 出力ファイル名はsmaple.csv

@@ -1,0 +1,8 @@
+[answer11]
+
+print(df['sex'].unique())
+print(df['cabin'].unique())
+
+
+[Tips]
+列に含まれる要素の確認にはunique()を使用

@@ -1,0 +1,10 @@
+[answer63]
+
+df2 = pd.concat([df2,df4],axis=1)
+df2
+
+
+[Tips]
+・複数のデータフレームを連結するときはpd.concatを使用
+・axis=0で行方向、axis=1で列方向に連結
+・pd.concat([df2,df4],axis=1)でdf2とdf4を列方向に連結

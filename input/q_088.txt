@@ -1,0 +1,3 @@
+[question88]
+
+# dfのage列とfare列で散布図を作成

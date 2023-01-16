@@ -1,0 +1,3 @@
+[question59]
+
+# df2にdf3を左結合（結合キーはname）し、df2に格納

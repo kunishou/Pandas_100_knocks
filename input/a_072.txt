@@ -1,0 +1,8 @@
+[answer72]
+
+df.describe()
+
+
+[Tips]
+データフレームの基本統計量を確認したい場合は
+describe()を使用

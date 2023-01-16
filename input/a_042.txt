@@ -1,0 +1,10 @@
+[answer42]
+
+df = df.drop(3,axis=0)
+df.head()
+
+
+[Tips]
+・行・列の削除をするにはdropを使用
+・行を削除する場合は、axis=0を指定
+（列を削除する場合は、axis=1）

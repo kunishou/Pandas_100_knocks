@@ -1,0 +1,8 @@
+[answer9]
+
+len(df)
+
+
+[Tips]
+dataframeのレコード数(行数)を知りたい時は
+len()を使用

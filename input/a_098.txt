@@ -1,0 +1,14 @@
+[answer98]
+
+from sklearn.metrics import accuracy_score
+
+accuracy_score(pred,test_y)
+
+
+[Tips]
+・accuracy_score(正解率)にて予測精度を検証
+・予測精度の評価指標には様々あるため、タスクに
+　合わせて適切な指標を選択
+
+（参考）分類タスクの評価指標
+　https://qiita.com/jyori112/items/110596b4f04e4e1a3c9b

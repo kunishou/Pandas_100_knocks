@@ -1,0 +1,3 @@
+[question14]
+
+# dfのnameの列のみ表示

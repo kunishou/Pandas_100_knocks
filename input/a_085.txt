@@ -1,0 +1,11 @@
+[answer85]
+
+df2[['name','English','Mathematics','History']].plot(kind='bar',figsize=(10,4),x=df2.columns[0])
+
+
+[Tips]
+・棒グラフを描画する場合は plot(kind='bar')を使用
+・「df2[['name','English','Mathematics','History']]」のように
+　使用したい列のみに絞る
+・df2.columns[0]はname列のこと。x=df2.columns[0]を指定し
+　x軸をname列にする(指定しないとどうなるかは試してみて下さい)

@@ -1,0 +1,17 @@
+[answer5]
+
+df.sort_values('fare')
+
+
+[Tips]
+・要素でソートするときはsort_valuesを使用
+・デフォルトでは昇順
+・降順でソートしたい場合は ascending=False を指定
+・ソートする列を複数指定可能
+
+ex)
+降順でソート
+df.sort_values('fare', ascending=False)
+
+複数列でのソート
+df.sort_values(['fare','age'])

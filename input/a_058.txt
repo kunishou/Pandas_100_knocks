@@ -1,0 +1,9 @@
+[answer58]
+
+df2 = df2.transpose()
+df2
+
+
+[Tips]
+・データフレームの行と列を入れ替えるときはtranspose()を使用
+・df2.Tとすることでも行と列を入れ替え可能

@@ -1,0 +1,11 @@
+[answer13]
+
+df.index.values
+
+
+[Tips]
+・インデックスを一覧表示するには.indexを使用
+・.valuesを付けることでndaaray形式に変換
+・list形式で表示する場合はtolist()を使用
+
+df.index.tolist()

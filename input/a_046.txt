@@ -1,0 +1,9 @@
+[answer46]
+
+df.isnull().sum()
+
+
+[Tips]
+・isnull().sum()で欠損値数を確認
+・欠損値じゃないレコードの数を確認したい場合は、
+　notnull().sum()

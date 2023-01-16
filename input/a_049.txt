@@ -1,0 +1,10 @@
+[answer49]
+
+df['survived'].values
+
+
+[Tips]
+・pandas.DataFrameやpandas.Seriesをndarray形式(配列)に
+　変換するにはvaluesを使用
+・機械学習ライブラリのscikit-learnではndarray形式で入力する
+　必要があるため、そのような際にDataFrameをndarray形式に変換する

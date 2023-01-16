@@ -1,0 +1,14 @@
+[answer30]
+
+df.select_dtypes(include='object')
+
+
+[Tips]
+・特定のデータ型の列を抽出したい時は
+　select_dtypesを使用する。
+・今回は文字列を抽出したいのでinclude='object'を
+　指定
+・exclude='object'とすれば数値型の列を抽出可能
+
+ex)
+df.select_dtypes(exclude='object')

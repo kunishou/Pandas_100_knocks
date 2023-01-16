@@ -1,0 +1,4 @@
+[question34]
+
+# dfのsex列にてmale→0、femlae→1に
+# 変更し、先頭の5行を表示

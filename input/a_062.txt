@@ -1,0 +1,11 @@
+[answer62]
+
+df2 = pd.merge(df2,df3,on='name',how='outer')
+df2
+
+
+[Tips]
+・外部結合では、df2とdf3の両方に存在するレコードが
+　残るように結合する
+・on=''で結合キーを指定
+・how=''で結合方法を指定

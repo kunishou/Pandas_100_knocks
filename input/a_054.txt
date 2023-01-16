@@ -1,0 +1,7 @@
+[answer54]
+
+df['name'].str.lower()
+
+
+[Tips]
+str.lower()で大文字を小文字に変換

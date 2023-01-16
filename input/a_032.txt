@@ -1,0 +1,8 @@
+[answer32]
+
+df['embarked'].value_counts()
+
+
+[Tips]
+ユニークな要素と出現数を確認するには
+value_counts()を使用

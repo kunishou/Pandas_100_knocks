@@ -1,0 +1,3 @@
+[question27]
+
+# dfのsex列がfemaleでかつageが40以上のデータのみ抽出

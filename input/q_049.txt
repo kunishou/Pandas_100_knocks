@@ -1,0 +1,3 @@
+[question49]
+
+# dfのsurvivedの列をndarray形式(配列)で表示

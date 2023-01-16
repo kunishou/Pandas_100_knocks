@@ -1,0 +1,10 @@
+[answer93]
+
+df_copy = df_copy.drop(['name', 'ticket', 'cabin', 'boat', 'body', 'home.dest'],axis=1)
+df_copy
+
+
+[Tips]
+・行・列の削除をするにはdropを使用
+・列を削除する場合は、axis=1を指定
+（行を削除する場合は、axis=0）

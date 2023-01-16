@@ -1,0 +1,3 @@
+[question67]
+
+# dfのage列の中央値を確認

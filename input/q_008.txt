@@ -1,0 +1,4 @@
+[question8]
+
+# ① dfのpclassの列のデータ型をdtypeで確認
+# ② 数値型から文字型に変換し、データ型をdtypeで確認

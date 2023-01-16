@@ -1,0 +1,9 @@
+[answer92]
+
+df_copy['age'] = df_copy['age'].fillna(df_copy['age'].mean()) #欠損値にageの平均値で補完
+df_copy['fare'] = df_copy['fare'].fillna(df_copy['fare'].mean()) #欠損値にfareの平均値で補完
+print(df_copy.isnull().sum())
+
+
+[Tips]
+欠損値の補完にはfillnaを使用

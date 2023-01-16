@@ -1,0 +1,10 @@
+[answer55]
+
+df['sex'] = df['sex'].replace('female','Python')
+df.head()
+
+
+[Tips]
+・数値、文字列の置換にはreplace()を使用
+・replace(a,b)でaをbに置換
+・数値でなく文字列の場合は replace('a','b')とする

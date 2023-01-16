@@ -1,0 +1,7 @@
+[answer70]
+
+df2['English'].min()
+
+
+[Tips]
+最小値の確認はmin()を使用

@@ -1,0 +1,8 @@
+[answer77]
+
+print(df['fare'].idxmax())
+print(df['fare'].idxmin())
+
+[Tips]
+データフレームの最大値、最小値の行名を
+求める場合はidxmax、idxminを使用

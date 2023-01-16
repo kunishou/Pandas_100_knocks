@@ -1,0 +1,4 @@
+[answer33]
+
+df.loc[3,'age'] = 40
+df.head()

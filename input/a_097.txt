@@ -1,0 +1,7 @@
+[answer97]
+
+pred = model.predict(test_X)
+
+
+[Tips]
+.predict()にて予測を実行

@@ -1,0 +1,10 @@
+[answer100]
+
+df_pred = pd.DataFrame(pred)
+df_pred.to_csv('../output/submission.csv',header=None)
+
+
+[Tips]
+・to_csvでcsv形式で出力
+・行番号、列名を削除して出力したいときは
+　index=None,header=Noneをつける

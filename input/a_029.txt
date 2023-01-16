@@ -1,0 +1,9 @@
+[answer29]
+
+df.query('name.str.contains("Mrs")', engine='python')
+
+
+[Tips]
+特定の文字列を含むデータを抽出したいときは
+str.contains()を使用
+engine='python'を指定しないとエラーが出る

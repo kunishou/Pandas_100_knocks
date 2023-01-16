@@ -1,0 +1,14 @@
+[answer40]
+
+df['test'] = df['age'].astype(str).str.cat(df['embarked'],sep='_')
+df.head()
+
+
+[Tips]
+・数値変数と文字変数(カテゴリカル変数)は結合できないため、
+　片方の列のデータ型を、もう片方の列のデータ型に変換する
+・データ型の変換には astype を使用する(問題8を参照)
+・ここでは数値変数のageを、文字変数(str)に変換
+・下記のコードでも結合可能
+
+df['test'] = df['age'].astype(str) + '_' + df['embarked']

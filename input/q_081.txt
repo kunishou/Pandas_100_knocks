@@ -1,0 +1,4 @@
+[question81]
+
+# dfのsex列をOne-hotエンコーディングし、
+# dfの先頭5行を表示

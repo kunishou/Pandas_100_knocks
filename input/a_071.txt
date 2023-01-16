@@ -1,0 +1,11 @@
+[answer71]
+
+df2 =df2.drop('name',axis=1)
+print(df2.groupby('class').max())
+print(df2.groupby('class').min())
+print(df2.groupby('class').mean())
+
+
+[Tips]
+指定の列名でグルーピングしたい場合は
+groupby('列名')を使用する

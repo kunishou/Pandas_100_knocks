@@ -1,0 +1,8 @@
+[answer79]
+
+print(df['age'].mode())
+print(df['age'].value_counts())
+
+
+[Tips]
+最頻値を取得する場合は mode()を使用

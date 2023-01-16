@@ -1,0 +1,3 @@
+[answer25]
+
+df[df['age'] >= 30]

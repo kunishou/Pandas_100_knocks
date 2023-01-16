@@ -1,0 +1,7 @@
+[answer67]
+
+df['age'].median()
+
+
+[Tips]
+・列の中央値はmedian()で確認

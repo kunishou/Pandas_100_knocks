@@ -1,0 +1,3 @@
+[answer21]
+
+df.loc[:,['name','ticket']]

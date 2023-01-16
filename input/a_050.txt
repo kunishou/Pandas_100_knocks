@@ -1,0 +1,8 @@
+[answer50]
+
+df.sample(frac=1)
+
+
+[Tips]
+行をシャッフルして表示する場合は、
+sample(frac=1)を使用

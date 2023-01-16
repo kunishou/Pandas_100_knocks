@@ -1,0 +1,12 @@
+[answer24]
+
+df_copy = df[['name','age','sex']]
+df_copy.to_csv('../output/sample.csv')
+
+
+[Tips]
+・to_csvでcsv形式で出力
+・行番号、列名を削除して出力したいときは
+　index=None,header=Noneをつける
+
+df_copy.to_csv('../output/sample.csv',index=None,header=None)

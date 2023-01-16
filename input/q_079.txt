@@ -1,0 +1,5 @@
+[question79]
+
+# ①dfのage列の最頻値を取得
+# ②value_counts()にてage列の要素数を
+# 確認し、①の結果の妥当性を確認

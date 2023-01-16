@@ -1,0 +1,12 @@
+[answer81]
+
+df = pd.get_dummies(df, columns=['sex'])
+df.head()
+
+
+[Tips]
+・機械学習では文字列をそのまま、学習アルゴリズムに
+　入力できないため、数値に変換する。pd.get_dummiesでは
+　One-Hotエンコーディングが可能
+・回帰問題を解く場合には、One-hotエンコーディングする
+　ことが多い

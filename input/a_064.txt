@@ -1,0 +1,10 @@
+[answer64]
+
+df2 = pd.concat([df2,df4],axis=1)
+df2 = df2.loc[:,~df2.columns.duplicated()]
+df2
+
+
+[Tips]
+df2.loc[:,~df2.columns.duplicated()]により
+重複した列を消去

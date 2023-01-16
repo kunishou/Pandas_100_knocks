@@ -1,0 +1,4 @@
+[question37]
+
+# dfのfare列を小数点以下で丸める
+#print(ans[37]) #回答表示

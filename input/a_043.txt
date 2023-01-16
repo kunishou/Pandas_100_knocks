@@ -1,0 +1,12 @@
+[answer43]
+
+df2.columns = ['name', 'class', 'Biology', 'Physics', 'Chemistry']
+df2.head()
+
+
+[Tips]
+・データフレーム.columns = リストで
+　列名を一括変更
+・renameを用いて以下のように変更することも可能
+
+df2 = df2.rename(columns={'English' : 'Biology','Mathematics' : 'Physics', 'History' : 'Chemistry'})

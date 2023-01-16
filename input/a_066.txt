@@ -1,0 +1,7 @@
+[answer66]
+
+df['age'].mean()
+
+
+[Tips]
+・列の平均値はmean()で確認

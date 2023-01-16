@@ -1,0 +1,12 @@
+[answer7]
+
+print(df.dtypes)
+print(df['cabin'].dtype)
+
+
+[Tips]
+・DataFrameのすべての列のデータ型を確認したい場合は dtypes
+・DataFrameの一つの列のデータ型を確認したい場合は dtype
+
+※複数のコードの結果を表示したい場合、printを使用
+(printをつけない場合、1行目のdtypesの結果しか表示されない)

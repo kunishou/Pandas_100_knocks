@@ -1,0 +1,10 @@
+[answer59]
+
+df2 = pd.merge(df2,df3,on='name',how='left')
+df2
+
+
+[Tips]
+・左結合では、df2に存在するレコードにdf3のレコードを結合する
+・on=''で結合キーを指定
+・how=''で結合方法を指定

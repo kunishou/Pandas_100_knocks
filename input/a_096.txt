@@ -1,0 +1,15 @@
+[answer96]
+
+from sklearn.ensemble import RandomForestClassifier
+
+model = RandomForestClassifier(n_estimators=100,random_state=0) # ランダムフォレストのインスタンスを作成
+
+model.fit(features,target) # 学習の実行
+
+
+[Tips]
+・RandomForestClassifierでランダムフォレストを呼び出し
+・ハイパーパラメータはn_estimatorsやmax_depthなどがある
+・.fit()にて学習を実行
+・入力値はndarray形式でないといけない
+（そのため、【94】にてndaaray形式に変換を実施）

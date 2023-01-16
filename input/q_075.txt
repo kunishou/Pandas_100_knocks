@@ -1,0 +1,4 @@
+[question75]
+
+# scikit-learnを用いてdf2のEnglish列を標準化する
+# (from sklearn.preprocessing import StandardScalerをインポート)

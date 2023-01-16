@@ -1,0 +1,7 @@
+[answer83]
+
+df['age'].plot(kind='hist')
+
+
+[Tips]
+ヒストグラムを描画する場合は plot(kind='hist')を使用

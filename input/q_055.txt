@@ -1,0 +1,5 @@
+[question55]
+
+# dfのsex列に含まれる「female」という単語を
+# 「Python」に置換。その後、1行目の
+# 「female」が「Python」に置き換わったことを確認

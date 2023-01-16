@@ -1,0 +1,7 @@
+[answer53]
+
+df['name'].str.upper()
+
+
+[Tips]
+str.upper()で小文字を大文字に変換

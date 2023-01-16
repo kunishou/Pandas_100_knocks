@@ -1,0 +1,14 @@
+[answer56]
+
+import re
+df['name'][0] = re.sub('Elisabeth','',df['name'][0])
+df['name'][0]
+
+
+[Tips]
+・部分一致の文字列消去にはre.sub()を使用
+・re.sub('消したい文字列','','元々の文字列') のように使う
+・完全一致で文字列を消去するときはreplaceを使用可能
+
+ex)
+df['sex'] = df['sex'].repalce('female','')

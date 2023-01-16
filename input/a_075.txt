@@ -1,0 +1,19 @@
+[answer75]
+
+from sklearn.preprocessing import StandardScaler
+
+#標準化を定義
+scaler = StandardScaler()
+scaler.fit(df2['English'].values.reshape(-1,1))
+
+#変換とデータフレームへの置換
+scaler.transform(df2['English'].values.reshape(-1,1)) # 変換のみ
+df2_std = pd.DataFrame(scaler.transform(df2['English'].values.reshape(-1,1))) # 変換とデータフレームへの置換をまとめて行うとこうなる
+
+df2_std.describe() #stdが【74】のEnglishと等しくなっていることを確認
+
+
+[Tips]
+・データフレームのひとつの列を標準化する場合は、
+　values.reshape(-1,1)で配列変換してやる方法もある
+・reshape(-1,1)でn行1列に変換

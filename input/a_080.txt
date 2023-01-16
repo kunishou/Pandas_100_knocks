@@ -1,0 +1,21 @@
+[answer80]
+
+from sklearn.preprocessing import LabelEncoder
+
+le = LabelEncoder() #ラベルエンコーダのインスタンスを作成
+
+df['sex'] = le.fit_transform(df['sex']) #エンコーディング
+df.head()
+
+
+[Tips]
+・機械学習では文字列をそのまま、学習アルゴリズムに
+　入力できないため、数値に変換する。LabelEncoder()では
+　例えば、以下のように文字列を数値に変換する。
+
+　male → 0
+　female → 1
+
+・RandomForestなど決定木での分類問題を
+　解く場合には、ラベルエンコーディングする
+　ことが多い

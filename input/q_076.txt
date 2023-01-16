@@ -1,0 +1,5 @@
+[question76]
+
+# scikit-learnを用いてdf2のEnglish、Mathmatics、History列を
+# Min-Maxスケーリングする
+# (from sklearn.preprocessing import StandardScalerをインポート)

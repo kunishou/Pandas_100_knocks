@@ -1,0 +1,13 @@
+[answer8]
+
+print(df['pclass'].dtype)
+df['pclass'] = df['pclass'].astype(str)
+print(df['pclass'].dtype)
+
+
+[Tips]
+・データ型を変更する場合は astype を使用
+・問題40の列同士の結合では、数値列と文字列を
+結合しますが、データ型が異なると結合が上手く
+いきません。両方の列のデータ型が同じになるように
+astypeを使用してデータ型の変換をします。

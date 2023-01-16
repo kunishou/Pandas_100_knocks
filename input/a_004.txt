@@ -1,0 +1,15 @@
+[answer4]
+
+df2 = pd.read_csv('../input/data1.csv')
+df2.head()
+
+
+[Tips]
+・csvの読み込みはread_csv
+・必要に応じてencoding=''を指定する
+utf-8
+shift_jis (日本語)
+cp932 (Windows拡張文字含む日本語)
+
+ex)
+df2 = pd.read_csv('../input/data1.csv',encoding='utf-8')

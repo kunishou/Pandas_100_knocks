@@ -1,0 +1,3 @@
+[question32]
+
+# dfのembarked列の要素と出現回数の確認

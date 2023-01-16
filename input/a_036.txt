@@ -1,0 +1,4 @@
+[answer36]
+
+df['fare'] = df['fare'] * 2
+df.head()

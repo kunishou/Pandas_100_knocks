@@ -1,0 +1,10 @@
+[answer52]
+
+print(df2.duplicated().value_counts())
+df2 = df2.drop_duplicates()
+df2
+
+
+[Tips]
+・重複行数をカウントする時は duplicated().value_counts()
+・重複行を削除する時は drop_duplicates()

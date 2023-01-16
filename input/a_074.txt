@@ -1,0 +1,20 @@
+[answer74]
+
+from sklearn.preprocessing import StandardScaler
+
+df2 = df2.drop(['name','class'],axis=1) #不要列の削除
+
+#標準化を定義
+scaler = StandardScaler()
+scaler.fit(df2)
+
+#変換とデータフレームへの置換
+scaler.transform(df2) # 変換のみ
+df2_std = pd.DataFrame(scaler.transform(df2), columns=df2.columns) # 変換とデータフレームへの置換をまとめて行うとこうなる
+
+df2_std.describe() #stdが等しくなっていることを確認
+
+
+[Tips]
+データフレームを標準化する場合は、scikit-learnの
+StandardScalerを使用

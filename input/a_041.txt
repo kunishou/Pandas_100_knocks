@@ -1,0 +1,10 @@
+[answer41]
+
+df = df.drop('body',axis=1)
+df.head()
+
+
+[Tips]
+・行・列の削除をするにはdropを使用
+・列を削除する場合は、axis=1を指定
+（行を削除する場合は、axis=0）

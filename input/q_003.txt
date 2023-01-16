@@ -1,0 +1,3 @@
+[question3]
+
+# dfのDataFrameサイズを確認

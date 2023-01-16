@@ -1,0 +1,12 @@
+[answer99]
+
+importance = model.feature_importances_ 
+
+print('Feature Importances:')
+for i, feat in enumerate(['pclass','age','sex','fare','embarked']):
+    print('\t{0:20s} : {1:>.5f}'.format(feat, importance[i]))
+
+
+[Tips]
+.feature_importances_にてランダムフォレストの
+学習における各列(特徴量)の重要度を確認可能

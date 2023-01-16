@@ -1,0 +1,3 @@
+[question72]
+
+# dfの基本統計量を確認(describe)

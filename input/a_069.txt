@@ -1,0 +1,7 @@
+[answer69]
+
+df2['English'].max()
+
+
+[Tips]
+最大値の確認はmax()を使用

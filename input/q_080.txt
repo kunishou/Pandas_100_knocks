@@ -1,0 +1,5 @@
+[question80]
+
+# dfのsex列をラベルエンコーディングし、
+# dfの先頭5行を表示
+# (from sklearn.preprocessing import LabelEncoderをインポート)

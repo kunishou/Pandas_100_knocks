@@ -1,0 +1,14 @@
+[answer87]
+
+%matplotlib inline
+from pandas.plotting import scatter_matrix
+
+_ = scatter_matrix(df,figsize=(20,20))
+
+
+[Tips]
+・%matplotlib inlineを記述することでJupyter Notebook上に
+　インラインで表示
+・データフレームの各列間の散布図を描画するには
+　scatter_matrixを使用
+・対角線はヒストグラム

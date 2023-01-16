@@ -1,0 +1,11 @@
+[answer68]
+
+df2 = df2.drop(['class'],axis=1)
+print(df2.sum(axis=1)) #行方向の合計
+print(df2.sum()) #列方向の合計
+
+
+[Tips]
+・合計値の確認はsum()を使用
+・引数空欄の場合、デフォルトは列方向の合計
+・引数にaxis=1を指定すると行方向の合計

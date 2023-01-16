@@ -1,0 +1,10 @@
+[answer57]
+
+df5['test2'] = df5['都道府県'].str.rstrip() +'_'+ df5['市区町村']
+df5.head()
+
+
+[Tips]
+・文字列右側の空白を削除　str.rstrip()
+・文字列の両端の空白を削除　str.strip()
+・文字列の左側の空白を削除　str.lstrip()

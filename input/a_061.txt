@@ -1,0 +1,10 @@
+[answer61]
+
+df2 = pd.merge(df2,df3,on='name',how='inner')
+df2
+
+
+[Tips]
+・内部結合では、df2とdf3の共通のキーのみで結合する
+・on=''で結合キーを指定
+・how=''で結合方法を指定

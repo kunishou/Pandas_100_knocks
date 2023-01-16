@@ -1,0 +1,9 @@
+[answer44]
+
+df2 = df2.rename(columns={'English' : 'Biology'})
+df2.head()
+
+
+[Tips]
+rename(columns={'English' : 'Biology'})で
+一部の列名のみ変更可能

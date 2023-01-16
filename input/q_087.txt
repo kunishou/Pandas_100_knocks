@@ -1,0 +1,4 @@
+[question87]
+
+# dfの各列間の散布図を表示
+# (from pandas.plotting import scatter_matrixをインポート)

@@ -1,0 +1,12 @@
+[answer95]
+
+from sklearn.model_selection import train_test_split
+
+(features , test_X , target , test_y) = train_test_split(features, target , test_size = 0.3 , random_state = 0)
+
+
+[Tips]
+・データを学習データ、テストデータに分割する場合は train_test_splitを使用
+・test_sizeで分割する割合を指定
+・random_stateでシード値を指定することでデータ分割時の乱数を固定
+（検証で乱数を固定したい時に使用）

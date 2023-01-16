@@ -1,0 +1,9 @@
+[answer89]
+
+df.plot(kind='scatter',x='age',y='fare',figsize=(8,6),title='age-fare scatter')
+
+
+[Tips]
+・散布図を描画するには plot(kind='scatter')を使用
+・figsizeでグラフサイズを指定可能
+・title=''でグラフタイトルを表示可能

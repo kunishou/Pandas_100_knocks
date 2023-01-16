@@ -1,0 +1,22 @@
+[answer76]
+
+from sklearn.preprocessing import MinMaxScaler
+
+df2 = df2.drop(['name','class'],axis=1) #不要列の削除
+
+# Min-Maxスケーリングを定義
+scaler = MinMaxScaler()
+scaler.fit(df2)
+
+# 変換とデータフレームへの置換
+scaler.transform(df2) # 変換のみ
+df2_std = pd.DataFrame(scaler.transform(df2), columns=df2.columns) # 変換とデータフレームへの置換をまとめて行うとこうなる
+
+df2_std.describe() #minが0、maxが1になっていることを確認
+
+
+[Tips]
+・データフレームをMin-Maxスケーリングする場合は、scikit-learnの
+　StandardScalerを使用
+・Min-Maxスケーリングでは最小値が0、最大値が1となるように
+　データを変換する

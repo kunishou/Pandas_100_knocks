@@ -1,0 +1,3 @@
+[answer3]
+
+df.shape

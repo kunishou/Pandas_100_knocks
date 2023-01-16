@@ -1,0 +1,7 @@
+[answer31]
+
+df.nunique()
+
+
+[Tips]
+ユニークな要素数の確認にはnunique()を使用
