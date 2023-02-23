@@ -1,11 +1,35 @@
 [answer62]
 
-df2 = pd.merge(df2,df3,on='name',how='outer')
-df2
+import re
 
+df = df.with_row_count().with_column(pl.when(pl.col('row_nr')==0)
+                                .then(re.sub('Elisabeth','',df.get_column('name')[0:1][0]))
+                                .otherwise(pl.col('name')).alias('name'))
+df.get_column('name')[0:1][0]
+
+
+[別解]（非推奨）
+
+df[0, 'name'] = re.sub('Elisabeth','',df[0, 'name'])
+df[0, 'name']
+
+[別解2]
+re.sub()を使わずreplaceでも置換可能
+
+.then(df.get_column('name')[0:1][0].replace('Elisabeth',''))
+
+----------------------------------------------
 
 [Tips]
-・外部結合では、df2とdf3の両方に存在するレコードが
-　残るように結合する
-・on=''で結合キーを指定
-・how=''で結合方法を指定
+・部分一致の文字列消去にはre.sub()を使用
+・re.sub('消したい文字列','','元々の文字列') のように使う
+・完全一致で文字列を消去するときはreplaceを使用可能
+
+----------------------------------------------
+
+[参考] pandas記法
+
+import re
+df['name'][0] = re.sub('Elisabeth','',df['name'][0])
+df['name'][0]
+

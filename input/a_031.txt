@@ -1,7 +1,28 @@
 [answer31]
 
-df.nunique()
+df.filter(pl.col('age').is_between(10,40, closed="both"))
 
+
+----------------------------------------------
 
 [Tips]
-ユニークな要素数の確認にはnunique()を使用
+・is_between(a, b)で「数値がaより大きく、b未満」という条件を
+　指定できる
+・引数closeにて境界条件を指定すること可能
+
+　closed="both"： a以上、b以下
+　closed="left"： a以上、b未満
+　closed="right"： aより大きく、b以下
+　closed="none"： aより大きく、b未満
+
+・FuterWarningが表示されるため、将来的に仕様変更がある可能性あり
+
+----------------------------------------------
+
+[参考] pandas記法
+
+
+df[df['age'].between(10,40)]
+
+※ pandasのbetweenではbetween(a, b)で「a以上、b以下」となり
+　 デフォルトの境界条件が違う

@@ -1,16 +1,59 @@
 [answer6]
 
-df_copy = df.copy()
-df_copy.head()
+df.sort('fare')
 
+[別解]
+
+df.select(pl.all().sort_by('fare'))
+
+
+----------------------------------------------
 
 [Tips]
-① df_copy = df と ② df_copy = df.copy() では
-挙動が異なるので注意が必要。
+・dataframe.sort()で指定した列でソートが可能
+　デフォルトでは昇順
+・pl.col().sort_by()でもソート可能
+・降順でソートしたい場合は reverse=True を指定
+・ソートする列を複数指定可能
+・nullを最後に表示させたい場合は nulls_last=True を指定
 
-①の場合、df_copyはdfを参照しているだけのため、
-df側の値を変えると、df_copy側の値も変わる
-(dfとdf_copyは連動)。
+ex) fare列で降順でソートした後にage列で降順にソートしたい場合は
+　　以下のように書く
+※ リスト内でage列を先に書く点に注意
 
-df側の値の変更をdf_copy側に反映させたくない
-場合には②のcopy()を使う(dfとdf_copyは独立)。
+df.sort(['age','fare'], reverse=True)
+
+(pl.col().sort_by()を使う場合)
+
+df.select(pl.all().sort_by(['age', 'fare'], reverse=True))
+
+
+
+・似たメソッドにpl.col().sort()があるが、これはカラムごとに独立してソートされる点に注意
+※ dataframe全体を前処理するようなときは基本的にdataframe.sort()もしくは
+　 pl.col().sort_by()を使うのが良いと思います
+
+ex) print(df.select(pl.col(['fare', 'age']).sort(reverse=True, nulls_last=True)).head())
+
+実行結果)
+
+┌──────────┬──────┐
+│ fare     ┆ age  │
+│ ---      ┆ ---  │
+│ f64      ┆ f64  │
+╞══════════╪══════╡
+│ 512.3292 ┆ 80.0 │
+│ 512.3292 ┆ 76.0 │
+│ 512.3292 ┆ 74.0 │
+│ 512.3292 ┆ 71.0 │
+│ 263.0    ┆ 71.0 │
+└──────────┴──────┘
+
+sort()ではfare列、age列が独立して降順にソートされているのが分かる
+
+----------------------------------------------
+
+[参考] pandas記法
+
+df.sort_values('fare')
+
